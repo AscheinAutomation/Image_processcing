@@ -1,0 +1,18 @@
+import cv2
+/là khởi tạo thư viện open cv để sử dụng các lệnh của nó, để sử dụng thư viện này mình gõ cv2. tên hàm là nó ra 
+image = cv2.imread('TTD_1014.JPG')
+/ đầu tiên là đặt biến nè, tiếp theo là xài cái lệnh đọc ảnh imread từ thư viện opencv2, mình quăng ảnh vào trong pycharm trước rồi hoặc mình gọi thằng từ máy bằng cách copy hết path của nó luôn
+scale_factor_x = 0.15
+scale_factor_y = 0.15
+/ scale_factor là để resize ảnh theo tỉ lệ gốc, máy nay tui k biết làm quái nào để resize cho nó hợp mấy ba à =)) 
+/ cái tỉ lệ sau lệnh này á, càng tăng là nó càng đúng với tỉ lệ gốc, giảm tầm 1,5 là vừa đẹp nếu ảnh bự hen, x là chiều dọc, y là ngang
+resized_image = cv2.resize(image, None, fx=scale_factor_x, fy=scale_factor_y)
+/ nãy là mình đặt biến thôi, giờ xài resize thì máy mới hiểu là resize cái ảnh, fx là trục x, fy là trục ý, nhớ nhe
+/ à ảnh mới là biến mới nhe, cái none là gì t k biet nua =)) nhma cứ thêm vào đi 
+cv2.imshow('Resized_image',resized_image)
+/ này để show á mấy ba, cái biến đầu tiên là tên của cửa sổ hiển thị, cái thứ 2 là cái ảnh của mà mình mới resize
+cv2.waitKey(0)
+/ này là lệnh đợi, mình đặt là 0 để khi nhấn phím bất kỳ nó tự out
+/ còn đặt theo số tức là nhiêu giây thì cái cửa sổ tự đóng
+cv2.destroyAllWindows()
+/ lệnh này để tắt hết mấy cái ảnh được mở, phòng hờ á mà, chắc cú =)) 
