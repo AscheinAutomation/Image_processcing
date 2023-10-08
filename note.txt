@@ -9,6 +9,7 @@ scale_factor_y = 0.15
 resized_image = cv2.resize(image, None, fx=scale_factor_x, fy=scale_factor_y)
 / nãy là mình đặt biến thôi, giờ xài resize thì máy mới hiểu là resize cái ảnh, fx là trục x, fy là trục ý, nhớ nhe
 / à ảnh mới là biến mới nhe, cái none là gì t k biet nua =)) nhma cứ thêm vào đi 
+/ à há, cái none là kích thước sau khi thay đổi, mình để là none thì opencv tự hiểu mà chơi =)) còn k thì mình để kích thước cụ thể nếu bạn có trình ( height, width ) =)))
 cv2.imshow('Resized_image',resized_image)
 / này để show á mấy ba, cái biến đầu tiên là tên của cửa sổ hiển thị, cái thứ 2 là cái ảnh của mà mình mới resize
 cv2.waitKey(0)
