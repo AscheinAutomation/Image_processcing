@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 from scipy import ndimage
 
+
 def show_robert():
     roberts_cross_v = np.array([[1, 0],
                                 [0, -1]])
@@ -21,6 +22,7 @@ def show_robert():
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
 
 if __name__ == '__main__':
     show_robert()

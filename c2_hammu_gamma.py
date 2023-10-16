@@ -1,14 +1,16 @@
 import cv2 as cv
 import matplotlib.pyplot as plt
 
+
 def Chuyen_Doi_Gamma(img, gamma, c):
     return float(c) * pow(img, float(gamma))
+
 
 def show_Chuyen_Doi_Gamma():
     fig = plt.figure(figsize=(16, 9))
     (ax1, ax2), (ax3, ax4) = fig.subplots(2, 2)
 
-    img = cv.imread('C2_sanbay.tif',0)
+    img = cv.imread('C2_sanbay.tif', 0)
     ax1.imshow(img, cmap='gray')
     ax1.set_title("ảnh gốc")
 
@@ -24,6 +26,7 @@ def show_Chuyen_Doi_Gamma():
     ax4.imshow(y3, cmap='gray')
     ax4.set_title("gamma=5")
     plt.show()
+
 
 if __name__ == '__main__':
     show_Chuyen_Doi_Gamma()
