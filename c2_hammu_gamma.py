@@ -8,7 +8,7 @@ def show_Chuyen_Doi_Gamma():
     fig = plt.figure(figsize=(16, 9))
     (ax1, ax2), (ax3, ax4) = fig.subplots(2, 2)
 
-    img = cv.imread('sanbay.tif',0)
+    img = cv.imread('C2_sanbay.tif',0)
     ax1.imshow(img, cmap='gray')
     ax1.set_title("ảnh gốc")
 
