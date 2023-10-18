@@ -6,7 +6,7 @@ img = cv2.imread('barcelona.jpg', 0)
 
 # Áp dụng cắt ngưỡng cố định
 threshold_value = 128
-thresholded_img = cv2.threshold(img, threshold_value, 255, cv2.THRESH_BINARY)
+ret, thresholded_img = cv2.threshold(img, threshold_value, 255, cv2.THRESH_BINARY)
 
 # Hiển thị ảnh gốc và ảnh cắt ngưỡng
 
