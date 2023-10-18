@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread('C2_sanbay.tif', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('C2_sanbay.tif', 0)
 
 # Tạo kernel Prewitt cho việc tính đạo hàm theo trục X
 kernel_x = np.array([[-1, 0, 1],
