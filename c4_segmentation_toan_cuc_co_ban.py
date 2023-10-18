@@ -53,7 +53,7 @@ def phan_doan_bang_cat_nguong(img, nguong):
 
 if __name__ == "__main__":
     # reading image in gray scale
-    img_goc = cv2.imread("C4_thanh.tif", 0)
+    img_goc = cv2.imread("C2_sanbay.tif", 0)
 
     # gọi ham để phân đoạn bằng cắt ngưỡng toàn cục dựa trên ngưỡng
     T = Tim_nguong_toan_cuc(img_goc)
