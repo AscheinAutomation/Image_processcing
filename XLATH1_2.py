@@ -12,7 +12,7 @@ print(f'Chiều rộng: {width} pixels')
 print(f'Độ sâu: {depth} bits per pixel')
 
 muoi_tieu = np.zeros_like(gray_image)
-probability = 0.02  # Điều chỉnh xác suất xuất hiện nhiễu muối tiêu
+probability = 0.5  # Điều chỉnh xác suất xuất hiện nhiễu muối tiêu
 
 for i in range(gray_image.shape[0]):
     for j in range(gray_image.shape[1]):
