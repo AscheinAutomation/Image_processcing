@@ -12,7 +12,7 @@ print(f'Chiều rộng: {width} pixels')
 print(f'Độ sâu: {depth} bits per pixel')
 
 mean = 0
-sigma = 25
+sigma = 100
 gauss_noise = np.random.normal(mean, sigma, gray_image.shape)
 
 anh_moi = cv2.add(gray_image, gauss_noise.astype(np.uint8))
